@@ -33,10 +33,10 @@ formEl.addEventListener("submit", (event) => {
     console.log(prezzoBase);
     event.preventDefault()
 
-    recapAgeEl.innerText = "l'età inserita è " + ageEL;
-    recapKmEl.innerText = "la distanza inserita è " + distanceEL;
+    recapAgeEl.innerText = "l'età inserita è " + ageEL.value;
+    recapKmEl.innerText = "la distanza inserita è " + distanceEL.value;
 
-    totalEl.innerText = "il costo del biglietto è " + prezzoBase; 
+    totalEl.innerText = "il costo del biglietto è € " + prezzoBase; 
 });
 
 
@@ -48,6 +48,7 @@ formEl.addEventListener("submit", (event) => {
 // CREARE UNA SEZIONE PER RESTITUIRE IL CALCOLO
 
 // FORMATTARE IL RISULTATO IN MODO CHE SI VEDA SOLO I PRIMI DUE NUMERI DECIMALI
+
 
 /*  
 buttonEL.addEventListener("click", () => { 

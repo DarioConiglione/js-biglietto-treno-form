@@ -1,31 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biglietto del treno form</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
 <body>
 
+    <header></header>
+    <main>
+
+
+        <form action="" id="form">
+
+            <input type="number" id="distance" class="btn btn-outline-warning" placeholder="km da percorrere">
+            <input type="number" id="age" class="btn btn-outline-warning" placeholder="Età del passeggero">
+
+            <button id="btn" class="btn btn-success">Calcolca costo</button>
+
+
+        </form>
+
+        <div id="costo"></div>
+        <div id="recapAge"></div>
+        <div id="recapKm"></div>
 
 
 
 
-<form action="" id="form">
 
-    <input type="number" id="distance">
-    <input type="number" id="age">    
 
-    <button id="btn">Calcolca costo</button>
-    
+    </main>
+    <footer></footer>
 
-</form>
 
-<div id="costo"></div>
-<div id="recapAge"></div>
-<div id="recapKm"></div>
+
+
+
+
 
 
 
@@ -39,4 +55,5 @@
 
     <script src="./asset/js/main.js"></script>
 </body>
+
 </html>
