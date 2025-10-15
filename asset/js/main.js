@@ -4,9 +4,22 @@ const distanceEL = document.getElementById("distance");
 const ageEL = document.getElementById("age");
 const buttonEL = document.getElementById("btn");
 const costoEl = document.getElementById("costo");
-const formEl = document.getElementById("form")
+const formEl = document.getElementById("form");
 
-const totalEl = document.getElementById("costo")
+const totalEl = document.getElementById("costo");
+
+const recapAgeEl = document.getElementById("recapAge");
+const recapKmEl = document.getElementById("recapKm");
+
+/*
+const riepilogokm = document.createElement("p");
+const riepilogoage = document.createElement("p");
+
+totalEl.appendChild("riepilogokm");
+totalEl.appendChild("riepilogoage");
+*/
+
+
 
 formEl.addEventListener("submit", (event) => { 
 
@@ -19,6 +32,9 @@ formEl.addEventListener("submit", (event) => {
     }     
     console.log(prezzoBase);
     event.preventDefault()
+
+    recapAgeEl.innerText = "l'età inserita è " + ageEL;
+    recapKmEl.innerText = "la distanza inserita è " + distanceEL;
 
     totalEl.innerText = "il costo del biglietto è " + prezzoBase; 
 });
