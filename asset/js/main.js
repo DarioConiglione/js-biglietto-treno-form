@@ -11,6 +11,8 @@ const totalEl = document.getElementById("costo");
 const recapAgeEl = document.getElementById("recapAge");
 const recapKmEl = document.getElementById("recapKm");
 
+const cardEl = document.getElementById("popUp")
+
 /*
 const riepilogokm = document.createElement("p");
 const riepilogoage = document.createElement("p");
@@ -29,14 +31,19 @@ formEl.addEventListener("submit", (event) => {
        prezzoBase = prezzoBase - (prezzoBase * 0.20) 
     } else if (ageEL.value > 65){
        prezzoBase = prezzoBase - (prezzoBase * 0.40) 
-    }     
+    } 
+       
     console.log(prezzoBase);
     event.preventDefault()
 
     recapAgeEl.innerText = "l'età inserita è " + ageEL.value;
     recapKmEl.innerText = "la distanza inserita è " + distanceEL.value;
 
-    totalEl.innerText = "il costo del biglietto è € " + prezzoBase; 
+    totalEl.innerText = "il costo del biglietto è € " + prezzoBase.toFixed(2); 
+   
+    cardEl.classList.remove("d-none");
+
+
 });
 
 
