@@ -14,16 +14,26 @@
     <header></header>
     <main>
 
-
+<div class="container">
         <form action="" id="form">
+            <section class="card bg-danger m-3">
 
-            <input type="number" id="distance" class="btn btn-outline-warning" placeholder="km da percorrere">
-            <input type="number" id="age" class="btn btn-outline-warning" placeholder="Età del passeggero">
+                <div class="d-flex justify-content-evenly p-5">
+                    
+                    <label for="">Distanza:</label>
+                    <input type="number" id="distance" class="btn btn-outline-warning" placeholder="km da percorrere">  
+                    <label for="">Età:</label>                  
+                    <input type="number" id="age" class="btn btn-outline-warning" placeholder="Inserisci l'età">
+                    
+                </div>
 
-            <button id="btn" class="btn btn-success">Calcolca costo</button>
+                <button id="btn" class="btn btn-success">Calcolca costo</button>
 
-
+                
+            </section>
         </form>
+</div>
+
 
         <div id="costo"></div>
         <div id="recapAge"></div>
